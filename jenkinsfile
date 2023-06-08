@@ -31,6 +31,10 @@ pipeline{
     echo "Hi i am  Failuru"
     // One or more steps need to be included within each condition's block.
   }
+   aborted {
+    echo "Hi i am aborted"
+    // One or more steps need to be included within each condition's block.
+  }
 }
 
   }
