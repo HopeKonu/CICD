@@ -15,6 +15,24 @@ pipeline{
         sh 'mvn -f Maven/pom.xml clean package'
       // One or more steps need to be included within the steps block.
     }
+       post {
+  always {
+   echo "Hi i am printing alaways "
+  }
+  unstable {
+    echo "I am unstable "
+    // One or more steps need to be included within each condition's block.
+  }
+  success {
+    echo "Hi i am success "
+    // One or more steps need to be included within each condition's block.
+  }
+  failure {
+    echo "Hi i am  Failuru"
+    // One or more steps need to be included within each condition's block.
+  }
+}
+
   }
 
 }
