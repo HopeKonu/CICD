@@ -44,7 +44,7 @@ pipeline{
     
   steps {
 tool name: 'sonarqube1', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
-   withSonarQubeEnv(installationName : 'sonarqube1'  credentialsId: 'sonar-jenkins-connection') {
+   withSonarQubeEnv(installationName : 'sonarqube1' , credentialsId: 'sonar-jenkins-connection') {
     sh 'mvn -f Maven/pom.xml clean package sonar:sonar'
 
       
