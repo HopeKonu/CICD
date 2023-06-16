@@ -2,7 +2,7 @@ pipeline{
     agent any
     tools {
   maven 'maven 1'
-  hudson.plugins.sonar.SonarRunnerInstallation 'sonarqube1'
+  'hudson.plugins.sonar.SonarRunnerInstallation' 'sonarqube1'
 }
     stages {
   stage('git checkout') {
