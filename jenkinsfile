@@ -40,9 +40,9 @@ pipeline{
   }
 
   stage('SonarQube QA') {
-    tool name: 'sonarqube1', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+    
   steps {
-
+tool name: 'sonarqube1', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
     withCredentials([string(credentialsId: 'sonar-jenkins-connection', variable: '')]) {
        sh 'mvn -f Maven/pom.xml clean package sonar:sonar'
    
