@@ -57,7 +57,7 @@ rtUpload (
           "files": [
             {
               "pattern": "Maven/target/*.jar",
-              "target": "libs-snapshot-local/"
+              "target": "libs-snapshot-local/com/devopspract/DevopsMaven/1.0-SNAPSHOT/"
             }
          ]
     }''',
