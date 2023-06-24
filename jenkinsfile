@@ -96,6 +96,12 @@ stage("publishing jfrog artifactory info"){
 }
 
 
+stage ("Terraform init test") {
+  steps{
+    sh 'terraform -chdir=Terraform init'
+  }
+}
+
 
 }
 
