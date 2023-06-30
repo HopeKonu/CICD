@@ -113,7 +113,7 @@ stage ("Terraform plan ") {
 stage ("Terraform apply") {
   steps{
     sh 'terraform -chdir=Terraform apply -auto-approve'
-     sh 'terraform -chdir=Terraform destroy -auto-approve'
+    //  sh 'terraform -chdir=Terraform destroy -auto-approve'
   }
 }
 
